@@ -1,6 +1,6 @@
-import heroAsset from "@/assets/saffron-hero.jpg.asset.json";
-import savoryAsset from "@/assets/menu-savory-grid.jpg.asset.json";
-import sweetsAsset from "@/assets/menu-sweets-grid.jpg.asset.json";
+import heroImage from "@/assets/saffron-hero.jpg";
+import savory from "@/assets/menu-savory-grid.jpg";
+import sweets from "@/assets/menu-sweets-grid.jpg";
 
 export type Language = "en" | "ar";
 
@@ -14,10 +14,6 @@ export type MenuItem = {
   crop: "top-left" | "top-right" | "bottom-left" | "bottom-right";
   popular?: boolean;
 };
-
-const heroImage = heroAsset.url;
-const savory = savoryAsset.url;
-const sweets = sweetsAsset.url;
 
 // Edit this single object to reuse the template for another restaurant.
 export const restaurant = {

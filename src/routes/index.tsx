@@ -78,7 +78,7 @@ function Index() {
               <article key={`${item.name.en}-${itemIndex}`} className="group grid min-h-36 grid-cols-[7.5rem_minmax(0,1fr)] overflow-hidden rounded-lg border border-border bg-card shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg sm:min-h-44 sm:grid-cols-[11rem_minmax(0,1fr)]">
                 <div className="relative overflow-hidden bg-muted"><img src={item.image} alt={item.name[language]} width={1600} height={1600} loading="lazy" className={`absolute inset-0 h-full w-full max-w-none object-cover transition duration-500 group-hover:scale-[2.06] ${cropClass[item.crop]}`} /></div>
                 <div className="flex min-w-0 flex-col p-4 sm:p-5">
-                  {item.popular && <span className="mb-2 flex w-fit items-center gap-1 text-[10px] font-bold uppercase tracking-[0.15em] text-primary"><Star className="size-3 fill-current" /> Popular</span>}
+                  {"popular" in item && item.popular && <span className="mb-2 flex w-fit items-center gap-1 text-[10px] font-bold uppercase tracking-[0.15em] text-primary"><Star className="size-3 fill-current" /> Popular</span>}
                   <h4 className="font-display text-lg font-semibold leading-tight sm:text-xl">{item.name[language]}</h4>
                   <p className="mt-2 line-clamp-2 text-xs leading-5 text-muted-foreground sm:text-sm">{item.description[language]}</p>
                   <p className="mt-auto pt-3 text-sm font-bold text-foreground"><span className="text-primary">{item.price}</span> {t.kwd}</p>

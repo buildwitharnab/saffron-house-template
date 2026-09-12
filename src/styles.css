@@ -164,11 +164,6 @@
   *::-webkit-scrollbar { display: none; } /* Chrome/Safari */
 }
 
-@utility no-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-@utility no-scrollbar::-webkit-scrollbar { display: none; }
 
 @utility food-crop-top-left { object-position: 0% 0%; transform: scale(2); transform-origin: top left; }
 @utility food-crop-top-right { object-position: 100% 0%; transform: scale(2); transform-origin: top right; }
